@@ -7,7 +7,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "gatsby": "^4.13.0",
-    "faunadb",
+    "faunadb":"4.5.4",
     "gatsby-plugin-gatsby-cloud": "^4.13.0",
     "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-manifest": "^4.13.0",
