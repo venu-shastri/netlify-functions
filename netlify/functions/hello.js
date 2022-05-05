@@ -3,7 +3,8 @@ var faunadb = require('faunadb'),
 exports.handler=async function(event,context){
 
     //fauna code 
-    var client = new faunadb.Client({ secret: process.env.STOCKTRADER_FAUNADB_SECRET })
+   var client = new faunadb.Client({ secret:'fnAElzr85hAASaX-JuUc2Y1MRtwKO6OXu07W5hQd' ,domain: "db.us.fauna.com"})
+
     
     var createP = client.query(
                 q.Create(q.Collection('users'), { data: { userName: 'tom@gmail.com' ,roleName:'Analyst' }})
