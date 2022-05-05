@@ -6,7 +6,7 @@ exports.handler=async function(event,context){
     var client = new faunadb.Client({ secret: process.env.STOCKTRADER_FAUNADB_SECRET })
     
     var createP = client.query(
-                q.Create(q.Collection('users'), { data: { userName: 'tom@gmail.com' ,roleName:'Analyst' })
+                q.Create(q.Collection('users'), { data: { userName: 'tom@gmail.com' ,roleName:'Analyst' }})
       );
         
      createP.then(function(response) {
